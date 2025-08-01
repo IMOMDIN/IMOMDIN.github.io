@@ -37,6 +37,7 @@
     .logo-block {
       text-align: center;
       transition: transform 0.3s;
+      cursor: default; /* Указатель мыши обычный, а не "рука" */
     }
     .logo-block:hover {
       transform: scale(1.1);
@@ -45,15 +46,12 @@
       width: 80px;
       height: 80px;
     }
-    .logo-block a {
+    .logo-block {
       color: white;
-      text-decoration: none;
       display: block;
       margin-top: 10px;
       font-weight: bold;
-    }
-    .logo-block a:hover {
-      text-decoration: underline;
+      user-select: none; /* чтобы нельзя было выделить текст случайно */
     }
     /* Стили для кнопки */
     .btn {
@@ -80,22 +78,16 @@
 
   <div class="logos">
     <div class="logo-block">
-      <a href="https://developer.mozilla.org/ru/docs/Web/HTML" target="_blank">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML">
-        HTML
-      </a>
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML">
+      HTML
     </div>
     <div class="logo-block">
-      <a href="https://developer.mozilla.org/ru/docs/Web/CSS" target="_blank">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS">
-        CSS
-      </a>
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS">
+      CSS
     </div>
     <div class="logo-block">
-      <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript" target="_blank">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript">
-        JavaScript
-      </a>
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript">
+      JavaScript
     </div>
   </div>
 
