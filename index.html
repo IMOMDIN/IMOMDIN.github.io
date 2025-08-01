@@ -3,6 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Имомидин — начинающий разработчик</title>
+
+  <!-- 🔍 Мета-теги для SEO -->
+  <meta name="description" content="Имомидин — начинающий веб-разработчик. Изучаю HTML, CSS и JavaScript. Мой личный сайт.">
+  <meta name="keywords" content="Имомидин, HTML, CSS, JavaScript, веб-разработчик, сайты, Tajikistan, фулстек, разработка">
+  <meta name="author" content="Imomdin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       background: linear-gradient(to right, #1f4037, #99f2c8);
@@ -18,12 +25,32 @@
       font-size: 1.2em;
       margin-bottom: 40px;
     }
-    .logos img {
-      margin: 0 15px;
+    .logos {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .logo-block {
+      text-align: center;
       transition: transform 0.3s;
     }
-    .logos img:hover {
-      transform: scale(1.2);
+    .logo-block:hover {
+      transform: scale(1.1);
+    }
+    .logo-block img {
+      width: 80px;
+      height: 80px;
+    }
+    .logo-block a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .logo-block a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -32,9 +59,25 @@
   <p>Мне 16 лет, я учусь делать сайты и хочу стать фулстек-разработчиком</p>
 
   <div class="logos">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML" width="80">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS" width="80">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="80">
+    <div class="logo-block">
+      <a href="https://developer.mozilla.org/ru/docs/Web/HTML" target="_blank">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML">
+        HTML
+      </a>
+    </div>
+    <div class="logo-block">
+      <a href="https://developer.mozilla.org/ru/docs/Web/CSS" target="_blank">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS">
+        CSS
+      </a>
+    </div>
+    <div class="logo-block">
+      <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript" target="_blank">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript">
+        JavaScript
+      </a>
+    </div>
   </div>
 </body>
 </html>
+   
