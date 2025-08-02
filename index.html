@@ -4,19 +4,23 @@
   <meta charset="UTF-8">
   <title>Имомидин — начинающий разработчик</title>
 
-  <!-- 🔍 Мета-теги для SEO -->
+  <!-- Мета-теги для SEO -->
   <meta name="description" content="Имомидин — начинающий веб-разработчик. Изучаю HTML, CSS и JavaScript. Мой личный сайт.">
   <meta name="keywords" content="Имомидин, HTML, CSS, JavaScript, веб-разработчик, сайты, Tajikistan, фулстек, разработка">
   <meta name="author" content="Imomdin">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- ✅ Google подтверждение -->
+  <!-- Подтверждение Google -->
   <meta name="google-site-verification" content="vhMN-OPOZl1NtJ1c6hGqiRucPPJ5IMDI8_MNjQ91Xdc" />
 
-  <!-- Шрифты и иконки -->
+  <!-- Шрифты -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       padding: 0;
@@ -27,37 +31,36 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
       text-align: center;
       padding: 40px 20px;
     }
 
     h1 {
-      font-size: 3em;
+      font-size: 2.5em;
       margin-bottom: 10px;
     }
 
     p {
-      font-size: 1.3em;
+      font-size: 1.2em;
       max-width: 600px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       line-height: 1.6;
     }
 
     .logos {
       display: flex;
-      justify-content: center;
-      gap: 30px;
       flex-wrap: wrap;
-      margin-bottom: 40px;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
     }
 
     .logo-block {
       background: rgba(255, 255, 255, 0.1);
-      padding: 20px;
+      padding: 15px;
       border-radius: 16px;
       transition: transform 0.3s, background 0.3s;
-      width: 120px;
+      width: 100px;
       text-align: center;
     }
 
@@ -67,33 +70,31 @@
     }
 
     .logo-block img {
-      width: 64px;
-      height: 64px;
+      width: 48px;
+      height: 48px;
       margin-bottom: 10px;
     }
 
     .logo-block span {
-      display: block;
       font-weight: bold;
-      font-size: 1.1em;
-      user-select: none;
+      font-size: 1em;
     }
 
     .btn {
       background: linear-gradient(to right, #ffffff, #e0e0e0);
       color: #1f4037;
       border: none;
-      padding: 14px 30px;
-      font-size: 1.1em;
+      padding: 12px 24px;
+      font-size: 1em;
       border-radius: 30px;
       cursor: pointer;
-      margin-top: 30px;
+      margin-top: 20px;
       display: inline-flex;
       align-items: center;
       gap: 10px;
       text-decoration: none;
       font-weight: 600;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
       transition: all 0.3s ease-in-out;
       position: relative;
       overflow: hidden;
@@ -117,7 +118,7 @@
 
     .btn:hover {
       transform: scale(1.05);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
     }
 
     .btn svg {
@@ -125,9 +126,9 @@
       height: 20px;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 480px) {
       h1 {
-        font-size: 2em;
+        font-size: 1.8em;
       }
 
       p {
@@ -135,7 +136,18 @@
       }
 
       .logo-block {
-        width: 100px;
+        width: 90px;
+        padding: 10px;
+      }
+
+      .logo-block img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .btn {
+        font-size: 0.9em;
+        padding: 10px 20px;
       }
     }
   </style>
