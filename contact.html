@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Связаться со мной — Имомидин</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1e1e30, #4e4e73);
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    nav a {
+      padding: 8px 14px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      border: 1px solid rgba(255,255,255,0.1);
+      white-space: nowrap;
+    }
+
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    section {
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      margin-bottom: 16px;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+      color: #ddd;
+    }
+
+    .telegram-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 24px;
+      background: #0088cc;
+      color: #fff;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 16px;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+
+    .telegram-link:hover {
+      background: #00aaff;
+      transform: scale(1.05);
+    }
+
+    .telegram-link svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav {
+        gap: 6px;
+        padding: 12px;
+      }
+
+      nav a {
+        font-size: 13px;
+        padding: 7px 12px;
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      .telegram-link {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Навигация -->
+  <nav>
+    <a href="index.html">Обо мне</a>
+    <a href="contact.html">Связаться со мной</a>
+    <a href="projects.html">Проекты</a>
+  </nav>
+
+  <!-- Контент -->
+  <section>
+    <h1>Связаться со мной</h1>
+    <p>Если у вас есть вопросы, предложения или вы просто хотите пообщаться — пишите в Telegram. Я всегда рад новым знакомствам!</p>
+    <a class="telegram-link" href="https://t.me/Lite_L7" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+        <path d="M120,0C53.7,0,0,53.7,0,120s53.7,120,120,120s120-53.7,120-120S186.3,0,120,0z M176.1,85.5
+        l-23.5,111.2c-1.8,8.2-6.6,10.2-13.4,6.3l-37-27.3l-17.9,17.2c-2,2-3.6,3.6-7.3,3.6l2.6-37.1l67.4-61.1c2.9-2.6-0.6-4.1-4.4-1.5
+        l-83.3,52.4l-35.9-11.2c-7.8-2.4-8-7.8,1.6-11.6l140.2-54.1C171.5,68.3,178.6,72.4,176.1,85.5z"/>
+      </svg>
+      @Lite_L7
+    </a>
+  </section>
+</body>
+</html>
