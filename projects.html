@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>Имомидин — начинающий разработчик</title>
+  <title>Проекты — Имомидин</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     * {
@@ -48,9 +48,11 @@
       text-align: center;
       padding: 60px 20px;
       animation: fadeIn 1s ease-in-out;
+      max-width: 700px;
+      margin: 0 auto;
     }
 
-    h1, h2 {
+    h1 {
       margin-bottom: 16px;
       text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
     }
@@ -58,41 +60,53 @@
     p {
       font-size: 1.2em;
       line-height: 1.6;
-      max-width: 700px;
-      margin: 0 auto;
+      color: #ddd;
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     @media (max-width: 480px) {
-      nav { gap: 6px; padding: 12px; }
-      nav a { font-size: 13px; padding: 7px 12px; }
-      h1, h2 { font-size: 1.8em; }
-      p { font-size: 1em; }
+      nav {
+        gap: 6px;
+        padding: 12px;
+      }
+
+      nav a {
+        font-size: 13px;
+        padding: 7px 12px;
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      p {
+        font-size: 1em;
+      }
     }
   </style>
 </head>
 <body>
   <!-- Навигация -->
   <nav>
+    <a href="index.html">Главная</a>
     <a href="about.html">Обо мне</a>
     <a href="contact.html">Связаться со мной</a>
-    <a href="projects.html">Проекты</a>
   </nav>
 
-  <!-- Добро пожаловать -->
-  <section class="welcome">
-    <h1>Добро пожаловать</h1>
-    <p>Welcome to my website!</p>
-  </section>
-
-  <!-- Мои проекты -->
-  <section id="projects">
-    <h2>Мои проекты</h2>
-    <p>Здесь появятся мои веб-проекты, когда они будут готовы.</p>
+  <!-- Контент -->
+  <section>
+    <h1>Мои проекты</h1>
+    <p>У меня пока что нет проектов, но скоро они появятся!</p>
   </section>
 </body>
 </html>
