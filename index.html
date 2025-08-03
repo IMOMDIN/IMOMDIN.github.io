@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Имомидин — начинающий разработчик</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     * {
       margin: 0;
@@ -18,19 +18,16 @@
       min-height: 100vh;
     }
 
-    /* Навигация */
     nav {
       display: flex;
       justify-content: center;
-      gap: 8px; /* меньшее расстояние между кнопками */
+      gap: 8px;
       padding: 16px;
-      flex-wrap: nowrap;
-      overflow-x: auto;
       background: rgba(0, 0, 0, 0.2);
     }
 
     nav a {
-      padding: 8px 14px; /* компактнее */
+      padding: 8px 14px;
       background: rgba(255, 255, 255, 0.1);
       border-radius: 16px;
       text-decoration: none;
@@ -47,7 +44,6 @@
       background: rgba(255, 255, 255, 0.2);
     }
 
-    /* Секции */
     section {
       text-align: center;
       padding: 60px 20px;
@@ -67,41 +63,22 @@
     }
 
     @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     @media (max-width: 480px) {
-      nav {
-        gap: 6px;
-        padding: 12px;
-      }
-
-      nav a {
-        font-size: 13px;
-        padding: 7px 12px;
-      }
-
-      h1, h2 {
-        font-size: 1.8em;
-      }
-
-      p {
-        font-size: 1em;
-      }
+      nav { gap: 6px; padding: 12px; }
+      nav a { font-size: 13px; padding: 7px 12px; }
+      h1, h2 { font-size: 1.8em; }
+      p { font-size: 1em; }
     }
   </style>
 </head>
 <body>
   <!-- Навигация -->
   <nav>
-    <a href="#about">Обо мне</a>
+    <a href="about.html">Обо мне</a>
     <a href="#contact">Связаться со мной</a>
     <a href="#projects">Проекты</a>
   </nav>
