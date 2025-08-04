@@ -62,6 +62,22 @@
       margin: 0 auto;
     }
 
+    .datetime {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 0.9em;
+      opacity: 0.7;
+    }
+
+    .creation-date {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      font-size: 0.9em;
+      opacity: 0.7;
+    }
+
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
@@ -72,6 +88,7 @@
       nav a { font-size: 13px; padding: 7px 12px; }
       h1, h2 { font-size: 1.8em; }
       p { font-size: 1em; }
+      .datetime, .creation-date { font-size: 0.7em; }
     }
   </style>
 </head>
@@ -94,6 +111,12 @@
     <h2>Мои проекты</h2>
     <p>Здесь появятся мои веб-проекты, когда они будут готовы.</p>
   </section>
+
+  <!-- Дата и время -->
+  <div class="datetime" id="datetime"></div>
+  
+  <!-- Дата создания сайта -->
+  <div class="creation-date">Сайт создан 01.08.2025</div>
 
   <!-- JavaScript -->
   <script>
@@ -123,6 +146,26 @@
         }
       });
     });
+
+    // Обновление даты и времени (без дня недели)
+    function updateDateTime() {
+      const now = new Date();
+      const date = now.toLocaleDateString('ru-RU', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit'
+      });
+      const time = now.toLocaleTimeString('ru-RU', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+      });
+      document.getElementById('datetime').textContent = `${date} ${time}`;
+    }
+
+    // Обновляем каждую секунду
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
   </script>
 </body>
 </html>
