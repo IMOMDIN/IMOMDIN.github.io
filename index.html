@@ -20,11 +20,6 @@
       box-sizing: border-box;
     }
 
-    html, body {
-      height: 100%;
-      overflow-x: hidden;
-    }
-
     body {
       font-family: 'Poppins', 'Segoe UI', sans-serif;
       background: linear-gradient(135deg, var(--dark), #1e272e);
@@ -32,7 +27,6 @@
       min-height: 100vh;
       line-height: 1.6;
       padding-bottom: 80px;
-      position: relative;
     }
 
     nav {
@@ -131,6 +125,9 @@
     .creation-date, .datetime {
       font-size: 0.9em;
       opacity: 0.8;
+      position: static; /* Фиксируем позицию */
+      transform: none; /* Убираем трансформации */
+      animation: none; /* Убираем анимации */
     }
 
     .social-links {
