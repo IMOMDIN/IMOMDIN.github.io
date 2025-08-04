@@ -20,6 +20,11 @@
       box-sizing: border-box;
     }
 
+    html, body {
+      height: 100%;
+      overflow-x: hidden;
+    }
+
     body {
       font-family: 'Poppins', 'Segoe UI', sans-serif;
       background: linear-gradient(135deg, var(--dark), #1e272e);
@@ -27,6 +32,7 @@
       min-height: 100vh;
       line-height: 1.6;
       padding-bottom: 80px;
+      position: relative;
     }
 
     nav {
@@ -84,6 +90,7 @@
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
+      animation: float 3s ease-in-out infinite;
     }
 
     h1::after {
@@ -133,15 +140,10 @@
       margin-top: 40px;
     }
 
-    .social-links a {
+    .social-links span {
       color: var(--light);
       font-size: 1.8em;
-      transition: all 0.3s ease;
-    }
-
-    .social-links a:hover {
-      color: var(--accent);
-      transform: scale(1.2);
+      cursor: default;
     }
 
     @keyframes fadeIn {
@@ -151,12 +153,8 @@
 
     @keyframes float {
       0% { transform: translateY(0px); }
-      50% { transform: translateY(-15px); }
+      50% { transform: translateY(-10px); }
       100% { transform: translateY(0px); }
-    }
-
-    .floating {
-      animation: float 3s ease-in-out infinite;
     }
 
     @media (max-width: 768px) {
@@ -182,12 +180,12 @@
 
   <!-- Добро пожаловать -->
   <section class="welcome">
-    <h1 class="floating">Добро пожаловать</h1>
+    <h1>Добро пожаловать</h1>
     <p id="greeting">Рад видеть вас на моём сайте!</p>
     <div class="social-links">
-      <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
-      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <span><i class="fab fa-github"></i></span>
+      <span><i class="fab fa-telegram"></i></span>
+      <span><i class="fab fa-linkedin"></i></span>
     </div>
   </section>
 
